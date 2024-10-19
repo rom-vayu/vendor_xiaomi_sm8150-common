@@ -769,6 +769,17 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     manifest_vendor.xiaomi.hardware.mlipay.xml
 
+PRODUCT_PACKAGES += \
+    libwfdnative_libwfdnative_symlink64 \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64 \
+    libEGL_adreno_libEGL_adreno_symlink32 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink32 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink32 \
+    libEGL_adreno_libEGL_adreno_symlink64 \
+    libGLESv2_adreno_libGLESv2_adreno_symlink64 \
+    libq3dtools_adreno_libq3dtools_adreno_symlink64
+
 ifeq ($(TARGET_HAS_FM),true)
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
