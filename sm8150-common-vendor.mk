@@ -760,10 +760,10 @@ PRODUCT_PACKAGES += \
     dpmapi \
     qcrilhook \
     vendor.qti.hardware.alarm-V1.0-java \
-    android.hardware.neuralnetworks@1.3-service-qti-hta \
-    android.hardware.neuralnetworks@1.3-service-qti \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_vendor.xiaomi.hardware.mlipay
+    android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
+    android.hardware.neuralnetworks@1.3-service-qti.xml \
+    manifest_android.hardware.drm@1.3-service.widevine.xml \
+    manifest_vendor.xiaomi.hardware.mlipay.xml
 
 ifeq ($(TARGET_HAS_FM),true)
 PRODUCT_COPY_FILES += \
@@ -795,6 +795,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8150-common/proprietary/vendor/lib64/vendor.qti.gnss@4.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@4.0-service.so
 
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-service-qti \
-    vendor.qti.gnss@4.0-service
+    android.hardware.gnss@2.1-service-qti.xml \
+    vendor.qti.gnss@4.0-service.xml
 endif
